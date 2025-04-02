@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>EVOS: Efficient Implicit Neural Training via EVOlutionary Selector</title>
+  <title>Enhancing Implicit Neural Representations via Symmetric Power Transformation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,36 +52,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">EVOS: Efficient Implicit Neural Training via EVOlutionary Selector</h1>
+            <h1 class="title is-1 publication-title">Enhancing Implicit Neural Representations via Symmetric Power Transformation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://weixiang-zhang.github.io/" target="_blank">Weixiang Zhang</a><sup>1</sup>,</span>
+                <a href="https://weixiang-zhang.github.io/" target="_blank">Weixiang Zhang</a>,</span>
                 <span class="author-block">
-                  <a href="https://shuzhaoxie.github.io/" target="_blank">Shuzhao Xie</a><sup>1</sup>,</span>
+                  <a href="https://shuzhaoxie.github.io/" target="_blank">Shuzhao Xie</a>,</span>
                   <span class="author-block">
-                    Chengwei Ren<sup>1</sup>
+                    Chengwei Ren,
                   </span>
                   <span class="author-block">
-                    Siyi Xie<sup>2</sup>
+                    Shijia Ge,
                   </span>
                   <span class="author-block">
-                    <a href="https://shuzhaoxie.github.io/" target="_blank">Chen Tang</a><sup>3</sup>,</span>
+                    Mingzi Wang,
                   </span>
                   <span class="author-block">
-                    Shijia Ge<sup>1</sup>
-                  </span>
-                  <span class="author-block">
-                    Mingzi Wang<sup>1</sup>
-                  </span>
-                  <span class="author-block">
-                    <a href="http://pages.mmlab.top/" target="_blank">Zhi Wang</a><sup>1</sup><sup>*</sup>
+                    <a href="http://pages.mmlab.top/" target="_blank">Zhi Wang</a><sup>*</sup>
                   </span>
 
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Tsinghua University; <sup>2</sup>Xi’an Jiaotong University; <sup>3</sup>The Chinese University of Hong Kong<br>CVPR 2025</span>
+                    <span class="author-block"><i>Tsinghua University</i> <br>AAAI 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
                   </div>
 
@@ -89,7 +83,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2412.10153" target="_blank"
+                        <a href="https://arxiv.org/abs/2412.09213" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -98,20 +92,10 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/03247_supp.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/zwx-open/EVOS-INR" target="_blank"
+                    <a href="https://github.com/zwx-open/Symmetric-Power-Transformation-INR" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -122,7 +106,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2412.10153" target="_blank"
+                  <a href="https://arxiv.org/abs/2412.09213" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -138,20 +122,18 @@
   </div>
 </section>
 
-<!-- Teaser video-->
+<!-- Teaser-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="item">
-        <img src="static/images/pipelin6.png" alt="MY ALT TEXT"/>
+      <div class="item" style="text-align: center;">
+        <img src="static/images/intro2.png" style="width:70%; height:70%;"/>
         <h2 class="subtitle has-text-centered">
           <small>
-          <b>Overview of EVOS framework.</b>
-          The proposed method aims to optimize a MLP for implicit signal representation via evolutionary selector. 
-          The process comprises three key components: (1) <b>(Sparse) Fitness Evaluation</b> for efficiently guiding coordinate selection, 
-          (2) <b>(Frequency-Guided) Crossover</b> for improving performance by balancing frequency domain preferences, and 
-          (3) <b>(Augmented Unbiased) Mutation</b> for mitigating selection bias in each iteration. 
-          The selected coordinates from this evolutionary process are then fed into the network, enabling sparsified forward passes and reduced computational costs.
+          <b>Pipeline of Symmetric Power Transformation.</b> <br>
+          We transform data with specific range and symmetry to  enhance implicit neural representation without any additional time and spatial consumption. 
+          Integrating this simple nonlinear transformation can significantly improve the reconstruction quality. 
+          <i>See comparison of "KBS" in reconstructed image.</i>
         </small>
         </h2>
       </div>
@@ -168,12 +150,14 @@
         <h2 class="title is-3">📌 Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose <b><u>EVOlutionary Selector (EVOS)</u></b>, an efficient training paradigm for accelerating Implicit Neural Representation (INR). Unlike conventional INR training that feeds all samples through the neural network in each iteration, our approach restricts training to <b>strategically selected points</b>, reducing computational overhead by eliminating redundant forward passes. 
-            Specifically, we treat each sample as an individual in an evolutionary process, where only those fittest ones survive and merit inclusion in training, adaptively evolving with the neural network dynamics. 
-            While this is conceptually similar to Evolutionary Algorithms, their distinct objectives (selection for acceleration vs. iterative solution optimization) require a fundamental redefinition of evolutionary mechanisms for our context.
-            In response, we design sparse fitness evaluation, frequency-guided crossover, and augmented unbiased mutation to comprise EVOS. 
-            These components respectively guide sample selection with reduced computational cost, enhance performance through frequency-domain balance, and mitigate selection bias from cached evaluation. 
-            Extensive experiments demonstrate that our method achieves approximately 48%-66% reduction in training time while ensuring superior convergence without additional cost, establishing state-of-the-art acceleration among recent sampling-based strategies.
+            We propose <b><u>Symmetric Power Transformation</u></b> to enhance the capacity of Implicit Neural Representation (INR) from the perspective of data transformation. 
+            Unlike prior work utilizing random permutation or index rearrangement, our method features a reversible operation that does not require additional storage consumption.
+            Specifically, we first investigate the characteristics of data that can benefit the training of INR, proposing the <b><u>Range-Defined Symmetric Hypothesis</u></b>, which posits that specific range and symmetry can improve the expressive ability of INR. 
+            Based on this hypothesis, we propose a nonlinear Symmetric Power Transformation to achieve both range-defined and symmetric properties simultaneously. 
+            We use the power coefficient to redistribute data to approximate symmetry within the target range. 
+            To improve the robustness of the transformation, we further design deviation-aware calibration and adaptive soft boundary to address issues of extreme deviation boosting and continuity breaking.
+            Extensive experiments are conducted to verify the performance of the proposed method, demonstrating that our transformation can reliably improve INR compared with other data transformations. 
+            We also conduct 1D audio, 2D image and 3D video fitting tasks to demonstrate the effectiveness and applicability of our method.
           </p>
         
         </div>
@@ -189,34 +173,31 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item" style="text-align: center;">
-        <img src="static/images/exp_1.png" style="width:70%; height:70%;"/>
-        <h2 class="subtitle has-text-centered">
-          <small>We compared our method against Uniform Sampling (Uniform.), EGRA, Expansive Supervision (Expan.), Soft Mining, INT, <br>
-          and conventional full-coordinate training (Standard) commonly used in INR encoding.<br>
-          Our method demonstrates consistent superior efficiency across all comparative strategies. <br>
-          <i>Strategies without underlines employ constant scheduler, while <u>underlined strategies</u> implement step-wise scheduler.</i></small>
-        </h2>
-      </div>
 
-      <div class="item" style="text-align: center;">
-        <img src="static/images/visual_compare.png" style="width:60%; height:60%;"/>
+        <div class="item" style="text-align: center;">
+          <img src="static/images/sym_trans.png" style="width:80%; height:80%;"/>
+          <h2 class="subtitle has-text-centered">
+            <small>
+              Symmetric Power Transformation.
+          </small>
+          </h2>
+        </div>
+
+       <div class="item" style="text-align: center;">
+        <img src="static/images/hypothesis.png" style="width:30%; height:30%;"/>
         <h2 class="subtitle has-text-centered">
-          <small>
-            Visual comparison of sampling-based acceleration methods for INR training. <br>
-            Detailed examination reveals that our method particularly excels in preserving high-fidelity details, <br>
-            as evidenced by the wolf's eye and fur regions, producing results closest to ground truth.
+          <small>Range-Defined Symmetric Hypothesis.
         </small>
         </h2>
       </div>
 
+
       <div class="item" style="text-align: center;">
-        <img src="static/images/evos-loss.png" style="width:60%; height:60%;"/>
+        <img src="static/images/image_detail_5.png" style="width:80%; height:80%;"/>
         <h2 class="subtitle has-text-centered">
           <small>
-            Comparison of reconstruction quality across different sampling-based methods over training time. <br>
-            EVOS demonstrates both faster convergence and superior performance compared to alternative approaches. <br>
-            Moreover, EVOS exhibits more stable performance gains than INT, maintaining its advantage throughout the training process.
+            Visualization for 2D natural image fitting. <br>
+            With Symmetric Power Transformation in the SIREN and FINER backbones, texture details are reconstructed with greater fidelity.
         </small>
         </h2>
       </div>
@@ -227,27 +208,19 @@
 </section>
 
 
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container" style="text-align: center;">
+      <h2 class="title">Poster</h2>
 
-<section class="section hero ">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths" style="border-width: 2px; border-style: solid; border-color: #235d3a; border-radius: 20px;background-color: #F1F9F2;" >
-        <h2 class="title is-3">💡 Insights</h2>
-        <div class="content has-text-justified">
-          <p>
-            <b>Sample Weighting ALSO Benefits “Overfitting”.</b>
-            An intuitive assumption suggests that sparsifying training samples would compromise per-iteration reconstruction quality while reducing computational cost, due to incomplete data utilization. 
-            However, the results of EVOS (w/o CFS) in our experiment challenge this intuition, demonstrating that our strategy achieves superior fitting quality compared to full-data training under identical iteration counts.
-            This phenomenon can be understood through the lens of sample weighting, a technique that improves model generality by adjusting sample observation frequencies during training.
-            Indeed, EVOS can be viewed as a specialized form of sample weighting that reweights signal coordinates during signal fitting, implicitly regularizing the loss function through selective sampling.
-            Notably, this finding extends the benefits of sample weighting beyond traditional model generalization to signal fitting tasks (inherently an overfitting scenario without test set validation), revealing an intriguing contradiction that merits further investigation.
-          </p>
+      <iframe  src="static/pdfs/aaai25-poster.pdf" width="50%" height="550">
+          </iframe>
         
-        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+<!--End paper poster -->
 
 
 <!--BibTex citation -->
@@ -255,14 +228,14 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @misc{evos,
-          title={EVOS: Efficient Implicit Neural Training via EVOlutionary Selector}, 
-          author={Weixiang Zhang and Shuzhao Xie and Chengwei Ren and Siyi Xie and Chen Tang and Shijia Ge and Mingzi Wang and Zhi Wang},
+        @misc{sym-trans-inr,
+          title={Enhancing Implicit Neural Representations via Symmetric Power Transformation}, 
+          author={Weixiang Zhang and Shuzhao Xie and Chengwei Ren and Shijia Ge and Mingzi Wang and Zhi Wang},
           year={2024},
-          eprint={2412.10153},
+          eprint={2412.09213},
           archivePrefix={arXiv},
           primaryClass={cs.CV},
-          url={https://arxiv.org/abs/2412.10153}, 
+          url={https://arxiv.org/abs/2412.09213}, 
     }
       </code></pre>
     </div>
